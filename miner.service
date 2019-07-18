@@ -1,0 +1,10 @@
+[Unit]
+Description=Miner
+Requires=openvpn@client.service
+After=openvpn@client.service
+
+[Service]
+Type=simple
+ExecStart=/home/miner/gminer/mine_grin29.sh
+GuessMainPID=no
+User=miner

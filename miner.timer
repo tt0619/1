@@ -1,0 +1,10 @@
+[Unit]
+Description=start miner.service after delay 1 min
+
+[Timer]
+OnBootSec=1min
+
+
+[Install]
+WantedBy=multi-user.target
+

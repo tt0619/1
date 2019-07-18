@@ -1,0 +1,10 @@
+[Unit]
+After=networking.service
+Before=openvpn@client.service
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/mark.sh
+
+[Install]
+WantedBy=multi-user.target
