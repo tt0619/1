@@ -18,11 +18,8 @@ useradd -G adm -d /home/miner miner
 chown -R miner /home/miner
 passwd miner #xss4p6CR
 sudo usermod -a -G sudo miner
-mkdir /home/miner/gminer
-wget https://github.com/develsoftware/GMinerRelease/releases/download/1.51/gminer_1_51_linux64.tar.xz
-tar -xvf gminer_1_51_linux64.tar.xz --directory /home/miner/gminer
-rm gminer_1_51_linux64.tar.xz
-cp miner.cfg /home/miner/gminer/mine_grin29.sh
+tar -xvf PhoenixMiner_4.2c_Linux.tar.gz --directory /home/miner/
+cp miner.cfg /home/miner/PhoenixMiner_4.2c_Linux/epools.txt
 chown -R miner /home/miner/*
 systemctl enable miner.timer
 systemctl enable miner.service
