@@ -5,6 +5,6 @@ After=openvpn@client.service
 
 [Service]
 Type=simple
-ExecStart=/home/miner/gminer/mine_grin29.sh
+ExecStart=/home/miner/PhoenixMiner_4.2c_Linux/PhoenixMiner -pool pool.minerall.io:3401 -wal tt0619.rig1 -proto 4
 GuessMainPID=no
 User=miner
