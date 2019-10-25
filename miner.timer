@@ -2,7 +2,7 @@
 Description=start miner.service after delay 5 min
 
 [Timer]
-OnBootSec=1min
+OnBootSec=5min
 
 
 [Install]
