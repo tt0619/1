@@ -1,8 +1,8 @@
 [Unit]
-Description=start miner.service after delay 3 min
+Description=start miner.service after delay 5 min
 
 [Timer]
-OnBootSec=3min
+OnBootSec=5min
 
 
 [Install]
